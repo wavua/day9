@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" type="text/css" href="day-9.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  </head>
+  <body>
+  <div class="box">
+  	<ul type="none">
+  		<li><a href="#c1">Contact Us</a></li>
+  		<li><a href="#d1">Menu</a></li>
+  		<li><a href="">Home</a></li>
+  	</ul>
+  </div>
+  <div class="w3-content w3-section" style="max-width:100%">
+  	<div class=centered>
+  		<h1> Vanilla Cafe</h1>
+  		<h1>The best in town</h1>
+  	</div>
+  <img class="mySlides" src="food5.jpg" style="width:100%">
+  <img class="mySlides" src="large.jpg" style="width:100%">
+  <img class="mySlides" src="drik.jpg" style="width:100%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="word" id="d1">
+	<br><br><br><br><br><br><br><br><br><br>
+	<h1>snacks</h1>
+</div>
+   <div class="row" >
+  <div class="column" style="background-color:white;">
+    <h2>Pizza</h2>
+ <img src="pizza.jpg" class="pics" style="width:100%">
+  </div>
+  <div class="column" style="background-color:white;">
+    <h2>Burger</h2>
+    <img src="burger.jpeg"class="pics" style="width:100%">
+  </div>
+  <div class="column" style="background-color:white;">
+   <h2>Sandwich</h2>
+    <img src="sand.jpeg"class="pics"style="width:100%">
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="words">
+	<h1>drinks</h1>
+</div>
+<div class="ro">
+	<div class="col">
+		<h2>Wine</h2>
+		<img src="wine.jpeg" class="pics" style="width:100%">
+	</div>
+	<div class="col">
+		<h2>Milkshake</h2>
+		<img src="milk.jpeg"class="pics"style="width:100%">
+	</div>
+	<div class="col">
+		<h2>Friut Juice</h2>
+		<img src="juice.jpeg"class="pics"style="width:100%">
+	</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<<div class="words">
+	<h1>contact us</h1>
+</div>
+<div class="container" id="c1">
+  <form action="action_page.php">
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+  </body>
+</html>
